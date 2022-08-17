@@ -10,6 +10,24 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.area {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #888;
+  border-radius: 3px;
+  font-size: 12px;
+  top: -5px;
+  left: 15px;
+  padding:2px;
+}
+
+.info {
+  font-size: 12px;
+  padding: 5px;
+}
+.info .title {
+  font-weight: bold;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -41,7 +59,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 51, 83, 242;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -4001,7 +4019,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #bd5d38;
+  background-color: #38a7bd;
 }
 
 .nav-fill > .nav-link,
@@ -11340,7 +11358,7 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #0dcaf0;
 }
 
 @media (min-width: 992px) {
@@ -11364,7 +11382,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.5rem solid rgba();
   }
   #sideNav .navbar-collapse {
     display: flex;

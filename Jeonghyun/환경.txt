@@ -1,0 +1,9 @@
+OS : Windows 10 64bit
+specification : 3700x 1660s 16G
+
+
+Anaconda 2.1.4
+Python 3.9
+Jupyter Notebook
+Chrome 104.0.5112.81 (64bit)
+MS Excel

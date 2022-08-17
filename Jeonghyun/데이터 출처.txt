@@ -1,18 +1,27 @@
 국토정보플랫폼 국토정보맵 http://map.ngii.go.kr/ms/map/NlipMap.do?tabGb=statsMap
-인구 분포 격자 100m x 100m
-건축물수 격자 100m x 100m
+인구 분포 격자 100m x 100m.shp, shx, dbf, prj
+건축물수 격자 100m x 100m.shp, shx, dbf, prj
+건축물 주거용도면적 격자 100m x 100m.shp, shx, dbf, prj
+건물높이 격자 100m x 100m.shp, shx, dbf, prj
+건물연면적 격자 100m x 100m.shp, shx, dbf, prj
+주차장 접근성 500m x 500m.shp, shx, dbf, prj
 
 세종특별자치시 교통정보현황 http://tdata.sejong.go.kr:8080/ingecep/launcher/dashboard/
-VDS 교통량 위치별 점유율
+VDS 교통량 위치별 점유율.csv
 
 국토교통부_건축물대장정보 서비스 https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15044713
-세종시 건축물대장
+전국 건축물대장.csv
 
 국가공간정보포털 오픈마켓 행정구역_읍면동 http://data.nsdi.go.kr/dataset/15145
-세종시 읍면동 경계
+세종시 읍면동 경계.geojson
+대전광역시 읍면동 경계.geojson
 
 전국주차장정보표준데이터 https://www.data.go.kr/data/15012896/standard.do
-세종시 주차장 위치
+세종시 주차장 위치.csv
+대전광역시 주차장 위치.csv
 
 전기차 충전소 모니터링 https://www.ev.or.kr/evmonitor#
-충전소 리스트
+충전소 리스트.csv
+
+대전광역시 교통량
+대구광역시 교통량

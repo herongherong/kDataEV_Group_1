@@ -12,16 +12,15 @@ VDS 교통량 위치별 점유율.csv
 국토교통부_건축물대장정보 서비스 https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15044713
 전국 건축물대장.csv
 
-국가공간정보포털 오픈마켓 행정구역_읍면동 http://data.nsdi.go.kr/dataset/15145
-세종시 읍면동 경계.geojson
-대전광역시 읍면동 경계.geojson
+https://github.com/vuski/admdongkor
+전국 행정동 경계.geojson
 
 전국주차장정보표준데이터 https://www.data.go.kr/data/15012896/standard.do
 세종시 주차장 위치.csv
 대전광역시 주차장 위치.csv
 
 전기차 충전소 모니터링 https://www.ev.or.kr/evmonitor#
-충전소 리스트.csv
+전국 충전소 리스트.csv
 
-대전광역시 교통량
-대구광역시 교통량
+국토정보플랫폼 수직기준변환 KNGeoid18 http://map.ngii.go.kr/ms/mesrInfo/geoidIntro.do
+지오이드_output.txt

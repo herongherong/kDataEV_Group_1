@@ -1573,7 +1573,7 @@
     });
     
     function doDisplay(){
-        var con = document.getElementById("myDIV");
+        var con = document.getElementById("subMenu");
         if(con.style.display=='none'){
             con.style.display='block';
         }else {

@@ -1543,6 +1543,11 @@
             document
                 .getElementById(area.name)
                 .scrollIntoView({ behavior: "smooth" });
+            // 1. checkbox element를 찾습니다.
+            const checkbox = document.getElementById('icon');
+            // 2. checked 속성을 체크합니다.
+            checkbox.checked = true;    
+            doDisplayForJS();       
          });
     }
     
@@ -1571,7 +1576,7 @@
         });
     
     });
-    
+    //햄버거로 열고닫을때 열고닫아주기
     function doDisplay(){
         var con = document.getElementById("subMenu");
         if(con.style.display=='none'){
@@ -1580,3 +1585,26 @@
             con.style.display='none';
         }
     }
+    //js 내에서 사용하는 지도폴리곤 클릭 시 열어주기만 하는 함수
+    function doDisplayForJS(){
+        var con = document.getElementById("subMenu");
+        if(con.style.display=='none'){
+            con.style.display='block';
+        }else {
+            
+        }
+    }
+    // 스크립트 내에서 다른 네비게이션을 눌렀을 때 닫아주는 함수
+    function displayNone(){
+        var con = document.getElementById("subMenu");
+        if(con.style.display=='none'){
+            
+        }else {
+            con.style.display='none';
+            // 1. checkbox element를 찾습니다.
+            const checkbox = document.getElementById('icon');
+            // 2. checked 속성을 체크합니다.
+            checkbox.checked = false; 
+        }
+    }
+

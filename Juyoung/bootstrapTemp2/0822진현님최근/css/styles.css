@@ -11502,6 +11502,8 @@ input[id="icon"] + label > span {
   border-radius:15px;
   background: var(--bs-gray-dark);
   position:absolute;
+  transition: all 0.35s;  /* 진행되는 과정들을 천천히 보여줄 수 있다. 0.35초 동안 진행됨 */
+  z-index:2;
 }
 
 

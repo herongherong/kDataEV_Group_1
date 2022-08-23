@@ -3,7 +3,7 @@ specification : 3700x 1660s 16G
 
 
 Anaconda 2.1.4
-Python 3.9
+Python 3.9, Python 3.8
 Jupyter Notebook
 Chrome 104.0.5112.81 (64bit)
 MS Excel

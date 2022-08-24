@@ -17,68 +17,34 @@
         <link href="css/styles.css" rel="stylesheet" />
         <meta charset="utf-8">
         <title>다음 지도 API</title>
-        <script src="scripts.js">
-            var bDisplay = true; function doDisplay(){ 	
-                var con = document.getElementById("myDIV"); 	
-                if(con.style.display=='none'){ 		
-                    con.style.display = 'block'; 	
-                }else{ 		
-                    con.style.display = 'none'; 	
-                } 
-            } 
-        </script>
-
-
-
+        <script src="scripts.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">세종시 전기차 입지 선정</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav" >
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" onclick="displayNone()">Why</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" >　Project
-                        <input type="checkbox" id="icon" onclick="javascript:doDisplay();">
-                        <label for="icon">  <!--label은 인라인 스타일-->
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </label>
-                    </a></li>
-                        <ul class="sigungu" id = "subMenu" style="display:none">
-                            <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#전동면">전동면</a></li>
-                             <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#연동면">연동면</a></li>
-                            <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#연서면">연서면</a></li>
-                            <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#부강면">부강면</a></li>
-                        </ul>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Team" onclick="displayNone()">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" onclick="displayNone()">a</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" onclick="displayNone()">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards" onclick="displayNone()">Awards</a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Why</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Project</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">forward</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Team</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
             </div>
         </nav>
+
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">why</h2>
-                    
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">project</h2>
                     <!--<h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -88,35 +54,32 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
                     </div>-->
-                    <div id="map" style="width:70%;height:600px;"></div>
+                    <div id="map" style="width:100%;height:350px;"></div>
                     <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=5ce6e760e54fd6121aa9e63668e0b9b0"></script>
-                    
-                    <section class="resume-section" id="전동면">
-                        <div class="resume-section-content">
-                            <h3 class="mb-0">전동면</h3>
+                    <section class="resume-section" id="experience">
+                        <div class="overlay"></div>
+                                <div class="modal-wrapper">
+                                    <div class="modal-inner">
+                                        <div class="bottom-info">
+                                            <div class="title">abfba</div>
+                                            <div class="description">adfasfd     
+                                            </div>
+                                            <button>close</button>
+                                    </div>
+                                </div>
                         </div>
-                    </section>
-                    <section class="resume-section" id="연서면">
-                        <div class="resume-section-content">
-                            <h3 class="mb-0">연서면</h3>
-                        </div>
-                    </section>
-                    <section class="resume-section" id="연동면">
-                        <div class="resume-section-content">
-                            <h3 class="mb-0">연동면</h3>
-                        </div>
-                    </section>
-                    <section class="resume-section" id="부강면">
-                        <div class="resume-section-content">
-                            <h3 class="mb-0">부강면</h3>
-                        </div>
-                    </section>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"></h3>
-                            <div class="subheading mb-3"></div>
+                        <div class="overlay"></div>
+                        <div class="modal-wrapper">
+                            <div class="modal-inner">
+                                <div class="bottom-info">
+                                    <div class="title">abfba</div>
+                                    <div class="description">adfasfd     
+                                    </div>
+                                    <button>close</button>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -136,86 +99,10 @@
             </section>
             <hr class="m-0" />
             <!-- Education-->
-            <section class="resume-section" id="Team">
+            <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Team</h2>
-                    <div class="row row-cols-3 row gy-5 col-md-13">
-                            <div class="Team">
-                                <div class="Team_img">
-                                </div>
-                                <div class="Team_name subheading mb-3"> 성정현 </div>
-                                    <ul class="fa-ul mb-0">
-                                        <li>
-                                            <span class="fa-li justify-content-start"><i class="fa-solid fa-school text-warning"></i></span>
-                                            Hongik University-computer Science
-                                        </li>
-                                    </ul>
-                            </div>
-                            <div class="Team">
-                                <div class="Team_img">
-
-
-                                </div>
-                                <div class="Team_name subheading mb-3"> 성진현 </div>
-                                    <ul class="fa-ul mb-0 justify-content-start">
-                                        <li class="justify-content-start">
-                                            <span class="fa-li justify-content-start" ><i class="fa-solid fa-school text-warning "></i></span>
-                                            Hanyang University-industrial engineering
-                                        </li>
-                                    </ul>
-                            </div>
-                            <div class="Team">
-                                <div class="Team_img">
-
-
-                                </div>
-                                <div class="Team_nam subheading mb-3"> 이세린 </div>
-                                <ul class="fa-ul mb-0">
-                                    <li>
-                                        <span class="fa-li"><i class="fa-solid fa-school text-warning"></i></span>
-                                        hongik University
-                                    </li>
-                                </ul>
-                            </div>  
-                            <div class="Team">
-                                <div class="Team_img">
-                                </div>
-                                <div class="Team_name subheading mb-3"> 최주영 </div>
-                                <ul class="fa-ul mb-0">
-                                    <li>
-                                        <span class="fa-li"><i class="fa-solid fa-school text-warning"></i></span>
-                                        hongik University-
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="Team">
-                                <div class="Team_img">
-
-
-                                </div>
-                                <div class="Team_name subheading mb-3"> 손예림 </div>
-                                <ul class="fa-ul mb-0">
-                                    <li>
-                                        <span class="fa-li"><i class="fa-solid fa-school text-warning"></i></span>
-                                        hongik University
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="Team">
-                                <div class="Team_img">
-
-
-                                </div>
-                                <div class="Team_name subheading mb-3"> 최민지 </div>
-                                <ul class="fa-ul mb-0">
-                                    <li>
-                                        <span class="fa-li"><i class="fa-solid fa-school text-warning"></i></span>
-                                        hongik University
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                     <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Colorado Boulder</h3>
                             <div class="subheading mb-3">Bachelor of Science</div>
@@ -231,7 +118,7 @@
                             <p>GPA: 3.56</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div>  -->
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />

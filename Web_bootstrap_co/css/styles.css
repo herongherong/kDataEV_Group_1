@@ -7413,9 +7413,9 @@ textarea.form-control-lg {
   margin-bottom: 0.5rem !important;
 }
 
-/* .mb-3 {
+.mb-3 {
   margin-bottom: 1rem !important;
-} */
+}
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
@@ -11452,7 +11452,7 @@ p.lead {
 
 section.resume-section {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
@@ -11470,10 +11470,10 @@ section.resume-section .resume-section-content {
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -11533,6 +11533,7 @@ input[id="icon"]:checked + label > span:nth-child(3) {
   bottom:50%;
   transform:translateY(50%) rotate(-45deg);
 }
+
 
 .Team{
   text-align: center;

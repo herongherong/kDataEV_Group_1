@@ -1477,7 +1477,9 @@
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
             center: new kakao.maps.LatLng(36.570000, 127.2500000), // 지도의 중심좌표
+            draggable: false,
             level: 9 // 지도의 확대 레벨
+            
         };
     
     var map = new kakao.maps.Map(mapContainer, mapOption),
@@ -1608,3 +1610,24 @@
         }
     }
 
+    // 라디오버튼 번호에 따라 폴리움 map_xxx.html 바꿔주는 함수 
+    function mapChanger(){
+        var tmpMap = document.getElementById("preMap");
+        const tmpRadioButton = document.getElementsByName('chk_info');
+        
+        tmpRadioButton.forEach((node) => {
+            if(node.checked){
+                if(node.value=="인구"){
+                    tmpMap.src="./foliumMap/map_인구수.html";
+                }else if(node.value=="건축물"){
+                    tmpMap.src="./foliumMap/map_건축물수.html";
+                }else if(node.value=="EV"){
+                    tmpMap.src="./foliumMap/map_EV.html";
+                }
+            }
+        });
+
+
+        
+        
+    }

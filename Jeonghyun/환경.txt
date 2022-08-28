@@ -7,3 +7,19 @@ Python 3.9, Python 3.8
 Jupyter Notebook
 Chrome 104.0.5112.81 (64bit)
 MS Excel
+
+주요 Library :
+fiona
+geopandas
+shapely
+
+matplotlib
+seaborn
+folium
+
+sklearn
+imblearn # 샘플링
+xgboost
+lightgbm
+catboost 
+optuna # 하이퍼 파라미터 튜닝 AutoML

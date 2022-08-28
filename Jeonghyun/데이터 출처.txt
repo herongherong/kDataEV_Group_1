@@ -24,3 +24,5 @@ https://github.com/vuski/admdongkor
 
 국토정보플랫폼 수직기준변환 KNGeoid18 http://map.ngii.go.kr/ms/mesrInfo/geoidIntro.do
 지오이드_output.txt
+
+1인당 자동차 등록대수 https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1YL20731

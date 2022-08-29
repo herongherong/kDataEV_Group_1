@@ -32,6 +32,13 @@
         <!-- 아이콘용 -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+        <!-- 모델링 이미지용 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Carousel</title>
+        <link rel="stylesheet" href="carousel.css">
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -81,8 +88,23 @@
                     <br></br>
                     <div class="subheading mb-3">예측을 위해 수집한 데이터</div>
                     <whyCard include-html="./whyCard.html"></whyCard>
+
+                    <!-- <modelingIMG include-html="./modelingIMG.html"></modelingIMG> -->
+                    <br></br><br></br><br></br>
+                    <div class="subheading mb-3">모델링에 사용한 학습모델</div>
+                    <!-- 모델링 이미지 -->
+                    <div class="gallery">
+                        <div class="gallery-container">
+                          <img class="gallery-item gallery-item-1" src="Img\gallery_img_catBoost.png" data-index="1" >
+                          <img class="gallery-item gallery-item-2" src="Img\gallery_img_lightGBM.png" data-index="2">
+                          <img class="gallery-item gallery-item-3" src="Img\gallery_img_randomForestX.png" data-index="3">
+                          <img class="gallery-item gallery-item-4" src="Img\gallery_img_xgboost.png" data-index="4">
+                          <img class="gallery-item gallery-item-5" src="Img\gallery_img_decision treeX.jpg" data-index="5">
+                        </div>
+                        <div class="gallery-controls" ></div>
+                    </div>
                     
-                    
+                      <script src="carousel.js"></script>
                     <br></br>
                     <br></br>
 

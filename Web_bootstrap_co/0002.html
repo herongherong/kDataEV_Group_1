@@ -27,13 +27,15 @@
                 } 
             } 
         </script>
-
-
+        <!-- html 분리용 -->
+        <script src="js\includeHTML.js"></script>
+        <!-- 아이콘용 -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">세종시 전기차 입지 선정</span>
             </a>
@@ -43,10 +45,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav" >
+                    <!-- 번개이미지 -->
+                    <img src="Img\thunder.png" alt="dd" width="150" height="150">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#why" onclick="displayNone()">Why</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project" >　Project
-                        <input type="checkbox" id="icon" onclick="javascript:doDisplay();">
-                        <label for="icon">  <!--label은 인라인 스타일-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project" >Project
+                        <!-- <input type="checkbox" id="icon" onclick="javascript:doDisplay();">
+                        <label for="icon">  
                             <span></span>
                             <span></span>
                             <span></span>
@@ -57,7 +61,7 @@
                              <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#연서면">연서면</a></li>
                             <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#연동면">연동면</a></li>
                             <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#부강면">부강면</a></li>
-                        </ul>
+                        </ul> -->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#forward" onclick="displayNone()">forward</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Team" onclick="displayNone()">Team</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" onclick="displayNone()">Interests</a></li>
@@ -71,25 +75,46 @@
             <section class="resume-section" id="why">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Why</h2>
-                    <div class="subheading mb-3">세종시 전기차 입지선정을 정한 이유 및 소개 등이 들어갈 페이지입니다.</div>
-                    
-                    <input type="radio" name="chk_info" value="인구" onclick="mapChanger()" checked="checked">인구 히트맵
-                    <input type="radio" name="chk_info" value="건축물" onclick="mapChanger()">건축물 히트맵
-                    <input type="radio" name="chk_info" value="EV" onclick="mapChanger()">EV충전기 히트맵
-                    <br></br>
-                    <iframe id="preMap" src="./foliumMap/map_인구수.html" width="600" height="600" style="border:0"></iframe>
-                    <br> dddddddddddddddddd</br>
-                    <br> dddddddddddddddddd22</br>
-                    
+                    <div class="subheading mb-3">왜 전기차 충전소인가?</div>
+                    <whyCardGraph include-html="./whyCardGraph.html">dsd</whyCardGraph>
 
+                    <br></br>
+                    <div class="subheading mb-3">예측을 위해 수집한 데이터</div>
+                    <whyCard include-html="./whyCard.html"></whyCard>
+                    
+                    
+                    <br></br>
+                    <br></br>
+
+                    <br></br>
+                    <div class="subheading mb-3">수집 데이터 시각화</div>
+                    <!-- 버튼그룹형 라디오박스 인구, 건축물, ev충전기 -->
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" value="인구" name="chk_info" id="btnradio1"
+                        onclick="mapChanger()" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">인구 히트맵</label>
+                      
+                        <input type="radio" class="btn-check" value="건축물" name="chk_info" id="btnradio2"
+                        onclick="mapChanger()" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">건축물 히트맵</label>
+                      
+                        <input type="radio" class="btn-check" value="EV" name="chk_info" id="btnradio3" 
+                        onclick="mapChanger()"autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">EV충전기 현황</label>
+                    </div>
+
+                      
+                    <br></br>
+                    <iframe id="preMap" src="./foliumMap/map_인구수.html" width="70%" height="800" style="border:0"></iframe>
+                
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Project-->
             <section class="resume-section" id="project">
                 <div class="resume-section-content">
-                    <!--<h2 class="mb-5">project</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <h2 class="mb-5">project</h2>
+                    <!--<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Senior Web Developer</h3>
                             <div class="subheading mb-3">Intelitec Solutions</div>
@@ -97,13 +122,39 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
                     </div>-->
-                    <div id="map" style="width:70%;height:600px;"></div>
+
+                    <div class="subheading mb-3">전기차 충전소 입지선정 프로젝트 결과</div>
+
+                    <!-- <div id="map" style="width:70%;height:600px;"></div>
                     <script 
                         type="text/javascript" 
                         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da049e3ac039abb5a7527648e6661e98">
                     </script>
+                     -->
+                    
+                    <!-- 버튼그룹형 라디오박스 인구, 건축물, ev충전기 -->
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 
-                    <section class="resume-section" id="전동면">
+                        <input type="radio" class="btn-check" value="1" name="chk_info_project" id="btnradio11"
+                        onclick="mapChangerP()" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio11">머신러닝 1번</label>
+                      
+                        <input type="radio" class="btn-check" value="2" name="chk_info_project" id="btnradio22"
+                        onclick="mapChangerP()" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio22">머신러닝 2번</label>
+                      
+                        <input type="radio" class="btn-check" value="3" name="chk_info_project" id="btnradio33" 
+                        onclick="mapChangerP()"autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio33">머신러닝 3번</label>
+                    </div>
+
+
+                    
+
+                    <iframe id="preMap1" src="foliumMap\heatmap_최종입지선정.html" width="70%" height="800" style="border:0"></iframe>
+
+
+                    <!-- <section class="resume-section" id="전동면">
                         <div class="resume-section-content">
                             <h3 class="mb-0">전동면(예시) 상세 페이지입니다.</h3>
                         </div>
@@ -122,7 +173,7 @@
                         <div class="resume-section-content">
                             <h3 class="mb-0">부강면(예시) 상세 페이지입니다.</h3>
                         </div>
-                    </section>
+                    </section> -->
 
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -334,4 +385,7 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+    <script>
+        includeHTML();
+    </script>
 </html>

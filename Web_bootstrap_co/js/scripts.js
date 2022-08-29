@@ -1610,7 +1610,7 @@
         }
     }
 
-    // 라디오버튼 번호에 따라 폴리움 map_xxx.html 바꿔주는 함수 
+    // 라디오버튼 번호에 따라 폴리움 map_xxx.html 바꿔주는 함수, Why부분
     function mapChanger(){
         var tmpMap = document.getElementById("preMap");
         const tmpRadioButton = document.getElementsByName('chk_info');
@@ -1626,8 +1626,22 @@
                 }
             }
         });
-
-
+    }
+    
+    // 라디오버튼 번호에 따라 폴리움 map_xxx.html 바꿔주는 함수, project 부분
+    function mapChangerP(){
+        var tmpMap1 = document.getElementById("preMap1");
+        const tmpRadioButton2 = document.getElementsByName('chk_info_project');
         
-        
+        tmpRadioButton2.forEach((node) => {
+            if(node.checked){
+                if(node.value=="1"){
+                    tmpMap1.src="./foliumMap/heatmap_최종입지선정.html";
+                }else if(node.value=="2"){
+                    tmpMap1.src="./foliumMap/heatmap_lgbm.html";
+                }else if(node.value=="3"){
+                    tmpMap1.src="./foliumMap/heatmap_xbg.html";
+                }
+            }
+        });
     }

@@ -11556,3 +11556,4 @@ input[id="icon"]:checked + label > span:nth-child(3) {
   width: var(--fa-li-width,2em);
   line-height: inherit;
 }
+

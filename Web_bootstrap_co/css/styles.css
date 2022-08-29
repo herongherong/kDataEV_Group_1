@@ -11455,8 +11455,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -11470,10 +11470,10 @@ section.resume-section .resume-section-content {
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -11547,6 +11547,7 @@ input[id="icon"]:checked + label > span:nth-child(3) {
   margin: auto;
   border: 1px solid rgba(var(--bs-primary-rgb));
   border-radius: 50%;
+  overflow:hidden;
 }
 .fa-li {
   left: calc(var(--fa-li-width,2em) * -1);
@@ -11555,5 +11556,10 @@ input[id="icon"]:checked + label > span:nth-child(3) {
   text-align: center;
   width: var(--fa-li-width,2em);
   line-height: inherit;
+}
+.profile{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 

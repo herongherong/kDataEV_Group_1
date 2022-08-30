@@ -533,8 +533,10 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 300;
+  text-shadow: 1px 1px 1px #000;
+  color: var(--bs-gray);
 }
 
 .display-1 {
@@ -593,11 +595,12 @@ progress {
 }
 
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(2.375rem + 0.1vw);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.0;
+  text-shadow: 1px 1px 1px #000;;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .display-6 {
     font-size: 2.5rem;
   }
@@ -1429,7 +1432,7 @@ progress {
 
   .col-lg-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 50%;
   }
 
   .col-lg-6 {
@@ -7470,7 +7473,7 @@ textarea.form-control-lg {
 }
 
 .p-3 {
-  padding: 1rem !important;
+  padding: 1.3rem !important;
 }
 
 .p-4 {
@@ -7478,7 +7481,7 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 2.3rem !important;
 }
 
 .px-0 {
@@ -7546,7 +7549,7 @@ textarea.form-control-lg {
 }
 
 .pt-1 {
-  padding-top: 0.25rem !important;
+  padding-top: 0.5rem !important;
 }
 
 .pt-2 {
@@ -11372,6 +11375,11 @@ p.lead {
   font-weight: 500;
   font-size: 1.5rem;
 }
+.subheading1{
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 900;
+  
+}
 
 #sideNav {
   padding-left: 1rem;
@@ -11568,4 +11576,23 @@ input[id="icon"]:checked + label > span:nth-child(3) {
 .outer {
   display: flex;
   justify-content: center;
+}
+
+.lead1 {
+  
+  
+  
+  color: whitesmoke;
+
+  font-size: calc(2.375rem + 0.1vw);
+  font-weight: 600;
+  line-height: 1.0;
+  text-shadow: 1px 1px 1px #000;;
+}
+
+.lead2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #000;
+  color: ivory;
 }

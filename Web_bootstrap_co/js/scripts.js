@@ -1636,11 +1636,15 @@
         tmpRadioButton2.forEach((node) => {
             if(node.checked){
                 if(node.value=="1"){
-                    tmpMap1.src="./foliumMap/heatmap_최종입지선정.html";
+                    tmpMap1.src="./foliumMap/CatBoost_결과_25개.html";
                 }else if(node.value=="2"){
-                    tmpMap1.src="./foliumMap/heatmap_lgbm.html";
+                    tmpMap1.src="./foliumMap/LightGBM_결과_29개.html";
                 }else if(node.value=="3"){
-                    tmpMap1.src="./foliumMap/heatmap_xbg.html";
+                    tmpMap1.src="./foliumMap/랜덤포레스트_결과_44개.html";
+                }else if(node.value=="4"){
+                    tmpMap1.src="./foliumMap/최적입지 결과.html";
+                }else if(node.value=="5"){
+                    tmpMap1.src="./foliumMap/최적입지와 기존충전소.html";
                 }
             }
         });

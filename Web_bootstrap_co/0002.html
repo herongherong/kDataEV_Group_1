@@ -105,30 +105,37 @@
                     </div>
                     
                       <script src="carousel.js"></script>
+                      
+                      <div class="subheading mb-3"><div class="outer", style="font-size: 19px;">XGBoost와 Decision Tree는 진행과정에서 제외되었습니다.</div></div>
+                    
                     <br></br>
                     <br></br>
 
                     <br></br>
                     <div class="subheading mb-3">수집 데이터 시각화</div>
+                    <br></br>
+                    <br></br>
+                    <div class="outer">
                     <!-- 버튼그룹형 라디오박스 인구, 건축물, ev충전기 -->
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" value="인구" name="chk_info" id="btnradio1"
-                        onclick="mapChanger()" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnradio1">인구 히트맵</label>
-                      
-                        <input type="radio" class="btn-check" value="건축물" name="chk_info" id="btnradio2"
-                        onclick="mapChanger()" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio2">건축물 히트맵</label>
-                      
-                        <input type="radio" class="btn-check" value="EV" name="chk_info" id="btnradio3" 
-                        onclick="mapChanger()"autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio3">EV충전기 현황</label>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" value="인구" name="chk_info" id="btnradio1"
+                            onclick="mapChanger()" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnradio1">인구 3D맵</label>
+                        
+                            <input type="radio" class="btn-check" value="건축물" name="chk_info" id="btnradio2"
+                            onclick="mapChanger()" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio2">건축물 히트맵</label>
+                        
+                            <input type="radio" class="btn-check" value="EV" name="chk_info" id="btnradio3" 
+                            onclick="mapChanger()"autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio3">EV충전기 현황</label>
+                        </div>
                     </div>
-
                       
                     <br></br>
-                    <iframe id="preMap" src="./foliumMap/map_인구수.html" width="70%" height="800" style="border:0"></iframe>
-                
+                    <div class="outer">
+                        <iframe id="preMap" src="./foliumMap/map_인구수.html" width="70%" height="800" style="border:0"></iframe>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -153,28 +160,37 @@
                         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=da049e3ac039abb5a7527648e6661e98">
                     </script>
                      -->
-                    
+                    <div class="outer">
                     <!-- 버튼그룹형 라디오박스 인구, 건축물, ev충전기 -->
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 
-                        <input type="radio" class="btn-check" value="1" name="chk_info_project" id="btnradio11"
-                        onclick="mapChangerP()" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnradio11">머신러닝 1번</label>
-                      
-                        <input type="radio" class="btn-check" value="2" name="chk_info_project" id="btnradio22"
-                        onclick="mapChangerP()" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio22">머신러닝 2번</label>
-                      
-                        <input type="radio" class="btn-check" value="3" name="chk_info_project" id="btnradio33" 
-                        onclick="mapChangerP()"autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio33">머신러닝 3번</label>
+                            <input type="radio" class="btn-check" value="1" name="chk_info_project" id="btnradio11"
+                            onclick="mapChangerP()" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnradio11">CarBoost</label>
+                        
+                            <input type="radio" class="btn-check" value="2" name="chk_info_project" id="btnradio22"
+                            onclick="mapChangerP()" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio22">LightGBM</label>
+                        
+                            <input type="radio" class="btn-check" value="3" name="chk_info_project" id="btnradio33" 
+                            onclick="mapChangerP()"autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio33">RandomForest</label>
+
+                            <input type="radio" class="btn-check" value="4" name="chk_info_project" id="btnradio44" 
+                            onclick="mapChangerP()"autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio44">최적입지 결과</label>
+
+                            <input type="radio" class="btn-check" value="5" name="chk_info_project" id="btnradio55" 
+                            onclick="mapChangerP()"autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio55">최적입지 + 기존 충전소</label>
+                        </div>
+
                     </div>
-
-
                     
-
-                    <iframe id="preMap1" src="foliumMap\heatmap_최종입지선정.html" width="70%" height="800" style="border:0"></iframe>
-
+                    <br>
+                    <div class="outer">
+                        <iframe id="preMap1" src="foliumMap\CatBoost_결과_25개.html" width="70%" height="800" style="border:0"></iframe>
+                    </div>       
 
                     <!-- <section class="resume-section" id="전동면">
                         <div class="resume-section-content">
@@ -277,9 +293,10 @@
                             </div>  
                             <div class="Team">
                                 <div class="Team_img">
+                                    <img class="profile" alt="Team_img"src="profile\555.jpg">
                                 </div>
                                 <div class="Team_name subheading mb-3"> 최주영 </div>
-                                <p>Hongik University-computer Science</p>
+                                <p>Hongik University Sejong School of Game<br>GAME Software Major</p>
                             </div>
                             <div class="Team">
                                 <div class="Team_img">

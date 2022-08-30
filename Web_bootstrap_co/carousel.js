@@ -3,6 +3,13 @@ const galleryControlsContainer = document.querySelector('.gallery-controls');
 const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
+let Str1 = "XGBoost는 제외되었습니다.";
+let Str2 = "LightGBM의 정확도 = XX%";
+let Str3 = "RandomForest의 정확도 = XX%";
+let Str4 = "CatBoost의 정확도 = XX%";
+let Str5 = "DecisionTree는 제외되었습니다.";
+let imgNum = 3;
+
 class Carousel {
   constructor(container, items, controls) {
     this.carouselContainer = container;
@@ -30,13 +37,42 @@ class Carousel {
 
     if (direction.className == 'gallery-controls-previous') {
       this.carouselArray.unshift(this.carouselArray.pop());
+      imgNum -=1;
+      if(imgNum <=0){
+        imgNum = 5;
+      }
     } else {
       this.carouselArray.push(this.carouselArray.shift());
+      imgNum +=1;
+      if(imgNum >=6){
+        imgNum = 1;
+      }
     }
     
     this.updateGallery();
+
+    this.findId();
+
   }
 
+  findId(){
+    var tmpId = document.getElementById("imgAcc");
+
+    if(imgNum == 1){
+      tmpId.innerText = Str1
+    }else if(imgNum == 2){
+      tmpId.innerText = Str2
+    }else if(imgNum == 3){
+      tmpId.innerText = Str3
+    }else if(imgNum == 4){
+      tmpId.innerText = Str4
+    }else if(imgNum == 5){
+      tmpId.innerText = Str5
+    }
+
+
+    
+  }
   // Construct the carousel navigation
   // setNav() {
     // galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';

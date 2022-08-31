@@ -95,8 +95,8 @@
                     <!-- 번개이미지 -->
                     <img src="Img\thunder.png" alt="dd" width="150" height="150">
                     
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#why" onclick="displayNone()">소개</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project" >학습 결과
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#why" style="font-size: 20px;">프로젝트 소개</a><p></p></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#project"style="font-size: 20px;" >학습 결과</a><p></p></li>
                         <!-- <input type="checkbox" id="icon" onclick="javascript:doDisplay();">
                         <label for="icon">  
                             <span></span>
@@ -110,10 +110,11 @@
                             <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#연동면">연동면</a></li>
                             <li class="sigungu-item"><a class="nav-link js-scroll-trigger" href="#부강면">부강면</a></li>
                         </ul> -->
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#forward" onclick="displayNone()">마무리</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Team" onclick="displayNone()">팀 소개</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#forward"style="font-size: 20px;" > 기대 효과</a><p></p></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Team"style="font-size: 20px;" >팀 소개</a><p></p></li>
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" onclick="displayNone()">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards" onclick="displayNone()">Awards</a></li> -->
+                    <p></p><p></p><p></p><p></p>　
                 </ul>
             </div>
         </nav>
@@ -125,6 +126,7 @@
                     <!-- <h2 class="mb-5">Why</h2>
                      -->
                      
+                     
 
                     <div class="jb-wrap">
                         <div class="jb-image"><img src="Img\street.jpg" width="100%" height="350px" alt="" style="filter: grayscale(60%);"></div>
@@ -134,7 +136,8 @@
                                     <div class="jb-text-table-cell" >
                                         <div style="background : #000000; opacity: 0.7;">
                                             <br>
-                                        <p class="lead1">여기쯤 있어야 할 것 같은데...</p>
+                                        <!-- <p class="lead1">여기쯤 있어야 할 것 같은데...</p> -->
+                                        <p class="lead1">전기차 충전소 어딨니...?</p>
                                         <p class="lead2">-머신러닝을 활용한 세종시 전기차 충전소 최적 입지 분석-</p>
                                     <br>
                                 </div>
@@ -144,14 +147,15 @@
                         </div>
                     </div>
 
-
-
                     <br></br>
-                    <div class="subheading mb-1">
-                        <br></br>
-                        1. 주제 선정 배경 및 목적</div>
+                    <h3 class="mb-5">소개</h3>
                     
-                    <whyCardGraph include-html="./whyCardGraph.html">dsd</whyCardGraph>
+                    <div class="subheading mb-1">
+                        
+                        1. 주제 선정 배경 및 목적
+                    </div>
+                    
+                    <whyCardGraph include-html="./whyCardGraph.html"></whyCardGraph>
                     <br></br>
                     <br></br>
                     <div class="subheading mb-3">2. 예측을 위해 수집한 데이터</div><br></br>
@@ -169,7 +173,8 @@
                             <img class="gallery-item gallery-item-4" src="Img\gallery_img_catBoost.png" data-index="4">
                             <img class="gallery-item gallery-item-5" src="Img\gallery_img_decision treeX.jpg" data-index="5">
                         </div>
-                        <div class="outer"><p class="lead2" id="imgAcc" style="font-weight: 500; color: black; text-shadow: 1px 1px 1px gray;">RandomForest의 정확도 = XX%</p></div>
+                        <div class="outer"><p class="lead2" id="imgAcc" 
+                            style="font-weight: 500; color: black; text-shadow: 1px 1px 1px gray;">RandomForest의 F1 Score = 0.621</p></div>
                         
                         <div class="gallery-controls" ></div>
                     </div>
@@ -201,7 +206,7 @@
                             <label class="btn btn-outline-primary" for="btnradio3">EV충전기 현황</label>
                         </div>
                     </div>
-                      
+                    
                     <br></br>
                     <div class="outer">
                         <iframe id="preMap" src="./foliumMap/map_인구수.html" width="70%" height="800" style="border:0"></iframe>
@@ -212,7 +217,7 @@
             <!-- Project-->
             <section class="resume-section" id="project">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">project</h2>
+                    <h3 class="mb-5">학습 결과</h3>
                     <!--<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Senior Web Developer</h3>
@@ -287,7 +292,7 @@
                     </section> -->
 
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0"></h3>
                             <div class="subheading mb-3"></div>
@@ -308,37 +313,73 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"></span></div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <hr class="m-0" />
             <!-- Forward-->
-            <!-- <section class="resume-section" id="forward">
+            
+            <section class="resume-section" id="forward">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Forward</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                <br>
+                    <h3 class="mb-5">기대효과</h3>
+                    <div class="subheading mb-3">　<br></br></div>
+
+                    <div class="container" style="width: 100%;">
+                        <div class="row" style="width: 100%;">
+                            <!-- 공공기관 -->
+                          <div class="col">
+                            <div class="outer">
+                            <img  src="Img\icon1.png" width="70%">
+                            </div>
+                            <div class="outer">
+                                <div class="subheading1"><div style="line-height: 25px; font-size: 25px;">공공기관<p></p></div></div>
+                            </div>
+                            <div class="subheading mb-3">
+                                정책 달성을 위해 전기차 입지 선정시 최적의 위치 탐색 자료로 <br>활용 가능<br></br></div>
+                          </div>
+                          <!-- 기업 -->
+                          <div class="col">
+                            <div class="outer">
+                            <img src="Img\icon2.jpg" width="70%">
+                            </div>
+                            <div class="outer">
+                                <div class="subheading1"><div style="line-height: 25px; font-size: 25px;">기업<p></p></div></div>
+                            </div>
+                            <div class="subheading mb-3">
+                                전기차 충전소 이해관계자에게 최적 입지 선정의 솔루션 제공<br></br></div>
+                          </div>
+                          <!-- 세종 시민들 -->
+                          <div class="col">
+                            <div class="outer">
+                            <img src="Img\icon3.jpg" width="70%">
+                            </div>
+                            <div class="outer">
+                                <div class="subheading1"><div style="line-height: 25px; font-size: 25px;">세종 시민들<p></p></div></div>
+                            </div>
+                            <div class="subheading mb-3">
+                                전기차를 이용하는 시민들의 <br>편리성을 높임<br></br></div>
+                          </div>
+                          
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                      
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div>
+
+
+                
+                
+                    
+                
+                    
+                    
                 </div>
+
+                
             </section>
-            <hr class="m-0" /> -->
+            <hr class="m-0" />
             <!-- Team-->
             <section class="resume-section" id="Team">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Team</h2>
+                    <h3 class="mb-5">팀 소개</h3>
                     <div class="row row-cols-3 row gy-5 col-md-13">
                             <div class="Team">
                                 <div class="Team_img">
@@ -372,7 +413,8 @@
                                     <img class="profile" alt="Team_img"src="./profile/s.jpeg">
                                 </div>
                                 <div class="Team_nam subheading mb-3"> 이세린 </div>
-                                <p>Hongik University-computer Science</p>
+                                홍익대학교 경제학과<br>
+                                조장 / 데이터 전처리 / PPT
                             </div>  
                             <div class="Team">
                                 <div class="Team_img">
@@ -380,7 +422,7 @@
                                 </div>
                                 <div class="Team_name subheading mb-3"> 최민지 </div>
                                 홍익대학교 경영학과<br>
-                                데이터 전처리 / PPT
+                                데이터 수집 / PPT
                             </div>
                             <div class="Team">
                                 <div class="Team_img">

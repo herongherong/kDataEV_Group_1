@@ -3,11 +3,11 @@ const galleryControlsContainer = document.querySelector('.gallery-controls');
 const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
-let Str1 = "XGBoost는 제외되었습니다.";
-let Str2 = "LightGBM의 정확도 = XX%";
-let Str3 = "RandomForest의 정확도 = XX%";
-let Str4 = "CatBoost의 정확도 = XX%";
-let Str5 = "DecisionTree는 제외되었습니다.";
+let Str1 = "XGBoost는 학습속도가 낮아 제외되었습니다.";
+let Str2 = "LightGBM의 F1 Score = 0.405";
+let Str3 = "RandomForest의 F1 Score = 0.621";
+let Str4 = "CatBoost의 F1 Score = 0.640";
+let Str5 = "다른 모델들이 DecisionTree를 사용하고 있습니다.";
 let imgNum = 3;
 
 class Carousel {

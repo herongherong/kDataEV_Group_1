@@ -1,10 +1,10 @@
 국토정보플랫폼 국토정보맵 http://map.ngii.go.kr/ms/map/NlipMap.do?tabGb=statsMap
-인구 분포 격자 100m x 100m.shp, shx, dbf, prj
-건축물수 격자 100m x 100m.shp, shx, dbf, prj
-건축물 주거용도면적 격자 100m x 100m.shp, shx, dbf, prj
-건물높이 격자 100m x 100m.shp, shx, dbf, prj
-건물연면적 격자 100m x 100m.shp, shx, dbf, prj
-주차장 접근성 500m x 500m.shp, shx, dbf, prj
+인구 분포 격자 100m x 100m
+건축물수 격자 100m x 100m
+건축물 주거용도면적 격자 100m x 100m
+건물높이 격자 100m x 100m
+건물연면적 격자 100m x 100m
+주차장 접근성 500m x 500m
 
 세종특별자치시 교통정보현황 http://tdata.sejong.go.kr:8080/ingecep/launcher/dashboard/
 VDS 교통량 위치별 점유율.csv

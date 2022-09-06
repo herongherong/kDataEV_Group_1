@@ -1,0 +1,144 @@
+
+<head>
+  <style>
+    @font-face {
+      font-family: 'TmonMonsori';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      
+      .wrapper {
+        width: 700px;
+        height: 550px;
+        margin-top: -80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+      }
+      .hex {
+        width: 17vh;
+        height: calc(17vh*1.7430);
+        margin: .2vh;
+        position: relative;
+        overflow: hidden !important;
+        transform: rotate(60deg);
+        transition: all 0.2s ease-in-out;
+      }
+      .hex-inner1 {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(60deg);
+        overflow: hidden;
+        
+      }
+      .hex-inner2 {
+        display: flex;
+        width: inherit;
+        height: inherit;
+        background-size: cover !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-120deg);
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        
+        
+      }
+      .hex:nth-of-type(n+5):nth-of-type(-n+8) {
+        
+        margin-top: -25vh;
+      }
+      .hex:nth-of-type(n+8):nth-of-type(-n+11) {
+        
+        margin-top: -0.3vh;
+      }
+      p1 {
+        color: #fff;
+        padding: 10px;
+        font: normal 3vw "TmonMonsori";
+        text-shadow: 3px 5px 0 rgb(129, 213, 247);
+      }
+
+      .hex:hover {
+        
+        
+        
+        transform: rotate(420deg);
+      }
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="hex" id="hexB1" name="hexDataButton">
+      <div class="hex-inner1">
+        <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
+          <p1 style="margin-top: 20px; font-size: 40px;">차량수</p>
+        </div>
+      </div>
+    </div>
+    <div class="hex" id="hexB2" name="hexDataButton">
+      <div class="hex-inner1">
+        <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
+          <p1 style="margin-top: 20px; font-size: 40px;">인구수</p>
+        </div>
+      </div>
+    </div>
+    <div class="hex" id="hexB3" name="hexDataButton">
+      <div class="hex-inner1">
+        <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
+          <p1 style="margin-top: 20px; font-size: 30px;">100x100<br>국토정보맵</p>
+        </div>
+      </div>
+    </div>
+    <div class="hex" id="hexB4" name="hexDataButton">
+      <div class="hex-inner1">
+        <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
+          <p1 style="margin-top: 20px; font-size: 25px;">주거용도면적<br>데이터 수</p>
+        </div>
+      </div>
+    </div>
+    <div class="hex" id="hexB5" name="hexDataButton">
+      <div class="hex-inner1">
+        <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
+          <p1 style="margin-top: 20px; font-size: 30px;">전국 충전소<br>리스트</p>
+        </div>
+      </div>
+    </div>
+    <div class="hex" id="hexB6"  name="hexDataButton">
+      <div class="hex-inner1">
+        <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
+          <p1 style="margin-top: 20px; font-size: 30px;">대구,대전 <br>EV충전소</p>
+        </div>
+      </div>
+    </div>
+    <div class="hex" id="hexB7" name="hexDataButton">
+      <div class="hex-inner1">
+        <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
+          <p1 style="margin-top: 20px; font-size: 30px;">그 외 Raw<br>데이터</p>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+</body>

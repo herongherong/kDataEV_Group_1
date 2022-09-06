@@ -10,14 +10,19 @@
       
       .wrapper {
         width: 700px;
-        height: 550px;
-        margin-top: -80px;
+        height: 600px;
+        margin-top: auto;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         
+      }
+      .wrapper2{
+        margin-top: -100px;
+        margin-left: -12vh;
+        margin-right: -12vh;
       }
       .hex {
         width: 17vh;
@@ -82,61 +87,70 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="hex" id="hexB1" name="hexDataButton">
+  <div class="wrapper2">
+  <div class="wrapper" style="margin-top: 10px;">
+    
+    <div class="hex" id="hexB1" name="hexDataButton" type="button" data-bs-target="#carouselExampleDark" 
+    data-bs-slide-to="0" aria-label="Slide 1" onclick="dataChanger(0)">
       <div class="hex-inner1">
         <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
           <p1 style="margin-top: 20px; font-size: 40px;">차량수</p>
         </div>
       </div>
     </div>
-    <div class="hex" id="hexB2" name="hexDataButton">
+    <div class="hex" id="hexB2" name="hexDataButton" type="button" data-bs-target="#carouselExampleDark" 
+    data-bs-slide-to="1" aria-label="Slide 2" onclick="dataChanger(1)">
       <div class="hex-inner1">
         <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
           <p1 style="margin-top: 20px; font-size: 40px;">인구수</p>
         </div>
       </div>
     </div>
-    <div class="hex" id="hexB3" name="hexDataButton">
+    <div class="hex" id="hexB3" name="hexDataButton" type="button" data-bs-target="#carouselExampleDark" 
+    data-bs-slide-to="2" aria-label="Slide 3" onclick="dataChanger(2)">
       <div class="hex-inner1">
         <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
           <p1 style="margin-top: 20px; font-size: 30px;">100x100<br>국토정보맵</p>
         </div>
       </div>
     </div>
-    <div class="hex" id="hexB4" name="hexDataButton">
+    <div class="hex" id="hexB4" name="hexDataButton" type="button" data-bs-target="#carouselExampleDark" 
+    data-bs-slide-to="3" aria-label="Slide 4" onclick="dataChanger(3)">
       <div class="hex-inner1">
         <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
           <p1 style="margin-top: 20px; font-size: 25px;">주거용도면적<br>데이터 수</p>
         </div>
       </div>
     </div>
-    <div class="hex" id="hexB5" name="hexDataButton">
+    <div class="hex" id="hexB5" name="hexDataButton" type="button" data-bs-target="#carouselExampleDark" 
+    data-bs-slide-to="4" aria-label="Slide 5" onclick="dataChanger(4)">
       <div class="hex-inner1">
         <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
           <p1 style="margin-top: 20px; font-size: 30px;">전국 충전소<br>리스트</p>
         </div>
       </div>
     </div>
-    <div class="hex" id="hexB6"  name="hexDataButton">
+    <div class="hex" id="hexB6"  name="hexDataButton"type="button" data-bs-target="#carouselExampleDark" 
+    data-bs-slide-to="5" aria-label="Slide 6" onclick="dataChanger(5)">
       <div class="hex-inner1">
         <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
           <p1 style="margin-top: 20px; font-size: 30px;">대구,대전 <br>EV충전소</p>
         </div>
       </div>
     </div>
-    <div class="hex" id="hexB7" name="hexDataButton">
+    <div class="hex" id="hexB7" name="hexDataButton"type="button" data-bs-target="#carouselExampleDark" 
+    data-bs-slide-to="6" aria-label="Slide 7" onclick="dataChanger(6)">
       <div class="hex-inner1">
         <div class="hex-inner2" style="background-image: url(./img/hexagon3.png); background-position: center center; width: 100%; height: 100%;">
           <p1 style="margin-top: 20px; font-size: 30px;">그 외 Raw<br>데이터</p>
         </div>
       </div>
     </div>
-    
-
-    
-    
   </div>
+</div>
+    
+    
+  
 
   
   

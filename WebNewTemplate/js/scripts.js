@@ -6,7 +6,33 @@
 //
 // Scripts
 //new kakao.maps.LatLng(
+    let cardInnerTxt1="차량수";
+    let cardInnerTxt11="194K";
+    let cardInnerTxt12="세종시 자동차등록현황 기준";
 
+    let cardInnerTxt2="인구수";
+    let cardInnerTxt21="275K";
+    let cardInnerTxt22="세종특별시 2022년 인구 기준";
+
+    let cardInnerTxt3="100x100 국토정보맵";
+    let cardInnerTxt31="폴리곤";
+    let cardInnerTxt32="인구, 건물, 주차장 격자 데이터";
+
+    let cardInnerTxt4="주거용도면적 데이터 수";
+    let cardInnerTxt41="5K";
+    let cardInnerTxt42="세종특별시 2022년 건축물대장 기준";
+
+    let cardInnerTxt5="전국 충전소 리스트";
+    let cardInnerTxt51="세종시 한정";
+    let cardInnerTxt52="좌표기준 295개";
+    
+    let cardInnerTxt6="대구, 대전 EV충전소";
+    let cardInnerTxt61="머신러닝 학습용";
+    let cardInnerTxt62="2022년 대구, 대전 등록기준";
+
+    let cardInnerTxt7="그 외 Raw 데이터";
+    let cardInnerTxt71="40K~";
+    let cardInnerTxt72="전처리 전 기준";
     'use stric'
     var areas = [
         {
@@ -1651,9 +1677,60 @@
     }
 
 
-    function dataChanger(){
-        var tmpMap1 = document.getElementById("preMap1");
-        const tmpButton = document.getElementsByName('hexDataButton');
+    
+
+    function dataChanger(x){
+        var tmpStr1 = document.getElementById("dataCard01");
+        var tmpStr2 = document.getElementById("dataCard02");
+        var tmpStr3 = document.getElementById("dataCard03");
+        var tmpicon = document.getElementById("cardIcon");
         
+        
+
+
+        if(x==0){
+            
+            tmpicon.innerText = "directions_car";
+            tmpStr1.innerText = cardInnerTxt1;
+            tmpStr2.innerText = cardInnerTxt11;
+            tmpStr3.innerText = cardInnerTxt12;
+            
+        }
+        else if(x==1){
+            tmpicon.innerText = "family_restroom";
+            tmpStr1.innerText = cardInnerTxt2;
+            tmpStr2.innerText = cardInnerTxt21;
+            tmpStr3.innerText = cardInnerTxt22;
+        }
+        else if(x==2){
+            tmpicon.innerText = "view_comfy";
+            tmpStr1.innerText = cardInnerTxt3;
+            tmpStr2.innerText = cardInnerTxt31;
+            tmpStr3.innerText = cardInnerTxt32;
+        }
+        else if(x==3){
+            tmpicon.innerText = "business";
+            tmpStr1.innerText = cardInnerTxt4;
+            tmpStr2.innerText = cardInnerTxt41;
+            tmpStr3.innerText = cardInnerTxt42;
+        }
+        else if(x==4){
+            tmpicon.innerText = "battery_charging_full";
+            tmpStr1.innerText = cardInnerTxt5;
+            tmpStr2.innerText = cardInnerTxt51;
+            tmpStr3.innerText = cardInnerTxt52;
+        }
+        else if(x==5){
+            tmpicon.innerText = "view_comfy";
+            tmpStr1.innerText = cardInnerTxt6;
+            tmpStr2.innerText = cardInnerTxt61;
+            tmpStr3.innerText = cardInnerTxt62;
+        }
+        else if(x==6){
+            tmpicon.innerText = "more_horiz";
+            tmpStr1.innerText = cardInnerTxt7;
+            tmpStr2.innerText = cardInnerTxt71;
+            tmpStr3.innerText = cardInnerTxt72;
+        }
 
     }

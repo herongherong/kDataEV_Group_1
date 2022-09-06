@@ -6048,7 +6048,9 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -6057,12 +6059,12 @@ textarea.form-control-lg {
   content: "";
 }
 
+
 .carousel-item {
   position: relative;
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
@@ -6073,22 +6075,33 @@ textarea.form-control-lg {
   }
 }
 
-.carousel-item.active,
+.carousel-item.active{
+  display: block;
+  width: 100%;
+  margin-left: 0%;
+}
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  width: 100%;
+  margin-left: 0%;
 }
 
 /* rtl:begin:ignore */
 .carousel-item-next:not(.carousel-item-start),
 .active.carousel-item-end {
+  width: 100%;
   transform: translateX(100%);
+  
 }
 
 .carousel-item-prev:not(.carousel-item-end),
 .active.carousel-item-start {
+  width: 100%;
   transform: translateX(-100%);
 }
+
+
 
 /* rtl:end:ignore */
 .carousel-fade .carousel-item {
